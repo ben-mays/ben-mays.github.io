@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Benjamin Mays</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.11.0/metricsgraphics.min.css">
+    
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ '/assets/js/metricsgraphics.js' | relative_url }}"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <h1>Benjamin Mays</h1>
+        <img id="profile-img" src="https://avatars3.githubusercontent.com/u/9100476?v=3&s=180"/>
+        <p>Email: <a href="mailto: ben@eastside.io">ben@mays.dev</a><br/>
+           Github: @ben-mays</p><br/>
+      </header>
+
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        <div id="contributions"></div>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/contributions.js' | relative_url }}"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-100784727-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
